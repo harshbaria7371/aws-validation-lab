@@ -1,0 +1,10 @@
+services:
+  floci:
+    image: floci/floci:latest
+    container_name: aws_local_mock
+    ports:
+      # Floci routes all AWS services through a single port
+      - "4566:4566"
+    volumes:
+      # Binds a local directory to persist your mocked AWS state between restarts
+      - ./floci-data:/app/data

@@ -1,0 +1,26 @@
+{
+  "name": "aws-validation-lab",
+  "version": "1.0.0",
+  "description": "Bridging the gap between Cloud Engineering and QA. This project provides a documented walkthrough of setting up AWS infrastructure with built-in automated verification tests.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.1053.0",
+    "@aws-sdk/client-s3": "^3.1053.0",
+    "dotenv": "^17.4.2"
+  }
+}
